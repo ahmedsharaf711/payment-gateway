@@ -26,7 +26,7 @@ class KycDocument extends Model
     }
 
     public function reviewer()
-    {
-        return $this->belongsTo(Merchant::class, 'reviewed_by');
-    }
+{
+    return $this->belongsTo(Admin::class, 'reviewed_by');
+}
 }
